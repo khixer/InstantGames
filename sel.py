@@ -27,7 +27,6 @@ time.sleep(10)
 # doing infifnte scrolling
 scroll_count = 0
 
-all_pages = ''
 prev_game, prev_maker = [], []
 while True:
     html_source = driver.find_elements_by_class_name('ellipsis')
