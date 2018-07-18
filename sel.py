@@ -41,6 +41,8 @@ while True:
     print(count)
     if html_source:
         # TODO: function to parse the page
+        # TODO: check if result of previous data = new scraped data break the
+        # loop.
         all_pages = html_source
     else:
         break
@@ -56,21 +58,3 @@ while True:
 # print maker
 
 driver.quit()
-
-
-# lenOfPage = driver.execute_script(
-#     "window.scrollTo(0, document.body.scrollHeight);var lenOfPage=document.body.scrollHeight;return lenOfPage;")
-# match = False
-# while(match == False):
-#     lastCount = lenOfPage
-#     time.sleep(3)
-#     count += 1
-#     print(count)
-#     html_source = driver.find_element_by_xpath(".//html")
-#     print("1", html_source)
-#     lenOfPage = driver.execute_script(
-#         "window.scrollTo(0, document.body.scrollHeight);var lenOfPage=document.body.scrollHeight;return lenOfPage;")
-#     html_source = driver.find_element_by_xpath(".//html")
-#     print("2", html_source)
-#     if lastCount == lenOfPage:
-#         match = True
